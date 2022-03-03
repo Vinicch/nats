@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  nats:
+    image: nats
+    restart: always
+    command: -js --user vinicius --pass vinicius
+    ports:
+      - 4222:4222
